@@ -1,29 +1,29 @@
-#Fentastic is a program for generating a chessboard preview.
+# Fentastic is a program for generating a chessboard preview.
 
-##Features
+## Features
 
-###Easy customization
+### Easy customization
 
 To customize the board simply change the values of the corresponding global variables. <br />
 To change the look of pieces replace images in pieces directory with ones of your choosing.
 
 
 
-##Build
+## Build
 
-###Linux
+### Linux
 
 ```console
 $ git clone https://github.com/KxUgh/fentastic.git
 $ cd fentastic
 $ g++ -o fentastic fentastic.cpp lib/libpograph.a
 ```
-##Gallery
+## Gallery
 
 ![img](gallery/example.png)
 
 
-##Resources
+## Resources
 
 Pograph - a library for generating images<br />
 https://github.com/KxUgh/pograph

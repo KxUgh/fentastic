@@ -1,0 +1,5 @@
+.vscode/
+*.ppm
+fentastic
+pieces/*.png
+!pieces/*.ppm

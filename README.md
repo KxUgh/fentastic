@@ -16,7 +16,8 @@ To change the look of pieces replace images in pieces directory with ones of you
 ```console
 $ git clone https://github.com/KxUgh/fentastic.git
 $ cd fentastic
-$ g++ -Iinclude/ -o fentastic fentastic.cpp lib/libpograph.a
+$ chmod +x build.sh
+$ ./build.sh
 ```
 ## Gallery
 

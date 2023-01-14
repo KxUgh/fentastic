@@ -5,3 +5,4 @@ pieces/*.png
 !pieces/*.ppm
 lib/*
 include/*
+*.svg

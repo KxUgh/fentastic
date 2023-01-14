@@ -9,8 +9,8 @@ using std::filesystem::path;
 const path PIECEDIR("pieces/");
 const Color DARK_SQUARES(172,129,94);
 const Color LIGHT_SQUARES(228,206,172);
-const int SQUARE_WIDTH = 132;
-const int SQUARE_HEIGHT = 132;
+const int SQUARE_WIDTH = 100;
+const int SQUARE_HEIGHT = 100;
 const Pixel TRANSPARENCY(Color(0,255,0));
 
 Sprite WHITE_KING((PIECEDIR/"white_king.ppm").native(),TRANSPARENCY);
@@ -115,7 +115,7 @@ int main(int argc, char**argv){
 
     Canvas canvas(SQUARE_WIDTH*8,SQUARE_HEIGHT*8);
     canvas.fillBackground(DARK_SQUARES);
-    Rect lightSquare(Point(0,0),132,132,LIGHT_SQUARES);
+    Rect lightSquare(Point(0,0),SQUARE_WIDTH,SQUARE_HEIGHT,LIGHT_SQUARES);
 
     for(int y=0;y<8;++y){
         for(int x=0;x<8;++x){

@@ -1,5 +1,5 @@
 #!/bin/sh
-
+set -xe
 g++ -c -o pograph/pograph.o pograph/pograph.cpp
 ar rcs pograph/libpograph.a pograph/pograph.o
 cp pograph/pograph.h include/

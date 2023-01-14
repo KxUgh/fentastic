@@ -3,3 +3,5 @@
 fentastic
 pieces/*.png
 !pieces/*.ppm
+lib/*
+include/*

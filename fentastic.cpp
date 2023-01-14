@@ -1,26 +1,30 @@
-#include<bits/stdc++.h>
+#include <string>
+#include <filesystem>
 #include "pograph.h"
 
 using namespace pograph;
+using std::filesystem::path;
 
+
+const path PIECEDIR("pieces/");
 const Color DARK_SQUARES(172,129,94);
 const Color LIGHT_SQUARES(228,206,172);
 const int SQUARE_WIDTH = 132;
 const int SQUARE_HEIGHT = 132;
 const Pixel TRANSPARENCY(Color(0,255,0));
 
-Sprite WHITE_KING("pieces/white_king.ppm",TRANSPARENCY);
-Sprite WHITE_QUEEN("pieces/white_queen.ppm",TRANSPARENCY);
-Sprite WHITE_ROOK("pieces/white_rook.ppm",TRANSPARENCY);
-Sprite WHITE_BISHOP("pieces/white_bishop.ppm",TRANSPARENCY);
-Sprite WHITE_KNIGHT("pieces/white_knight.ppm",TRANSPARENCY);
-Sprite WHITE_PAWN("pieces/white_pawn.ppm",TRANSPARENCY);
-Sprite BLACK_KING("pieces/black_king.ppm",TRANSPARENCY);
-Sprite BLACK_QUEEN("pieces/black_queen.ppm",TRANSPARENCY);
-Sprite BLACK_ROOK("pieces/black_rook.ppm",TRANSPARENCY);
-Sprite BLACK_BISHOP("pieces/black_bishop.ppm",TRANSPARENCY);
-Sprite BLACK_KNIGHT("pieces/black_knight.ppm",TRANSPARENCY);
-Sprite BLACK_PAWN("pieces/black_pawn.ppm",TRANSPARENCY);
+Sprite WHITE_KING((PIECEDIR/"white_king.ppm").native(),TRANSPARENCY);
+Sprite WHITE_QUEEN((PIECEDIR/"white_queen.ppm").native(),TRANSPARENCY);
+Sprite WHITE_ROOK((PIECEDIR/"white_rook.ppm").native(),TRANSPARENCY);
+Sprite WHITE_BISHOP((PIECEDIR/"white_bishop.ppm").native(),TRANSPARENCY);
+Sprite WHITE_KNIGHT((PIECEDIR/"white_knight.ppm").native(),TRANSPARENCY);
+Sprite WHITE_PAWN((PIECEDIR/"white_pawn.ppm").native(),TRANSPARENCY);
+Sprite BLACK_KING((PIECEDIR/"black_king.ppm").native(),TRANSPARENCY);
+Sprite BLACK_QUEEN((PIECEDIR/"black_queen.ppm").native(),TRANSPARENCY);
+Sprite BLACK_ROOK((PIECEDIR/"black_rook.ppm").native(),TRANSPARENCY);
+Sprite BLACK_BISHOP((PIECEDIR/"black_bishop.ppm").native(),TRANSPARENCY);
+Sprite BLACK_KNIGHT((PIECEDIR/"black_knight.ppm").native(),TRANSPARENCY);
+Sprite BLACK_PAWN((PIECEDIR/"black_pawn.ppm").native(),TRANSPARENCY);
 Sprite EMPTY_SQUARE = Sprite();
 
 

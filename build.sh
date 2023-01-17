@@ -4,8 +4,8 @@ set -xe
 
 g++ -c -o pograph/pograph.o pograph/pograph.cpp
 ar rcs pograph/libpograph.a pograph/pograph.o
-mkdir include
+mkdir -p include
 cp pograph/pograph.h include/
-mkdir lib
+mkdir -p lib
 cp pograph/libpograph.a lib/
-g++ -Iinclude/ -o fentastic fentastic.cpp lib/libpograph.a
+g++ -Wall -Wextra -Iinclude/ -o fentastic fentastic.cpp lib/libpograph.a

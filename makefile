@@ -4,3 +4,4 @@ fentastic: pograph
 
 pograph:
 	$(CXX) $(CXXFLAGS) -c -o pograph/pograph.o pograph/pograph.cpp
+	ar rcs pograph/libpograph.a pograph/pograph.o

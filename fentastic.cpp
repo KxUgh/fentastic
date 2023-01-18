@@ -5,6 +5,11 @@
 using namespace pograph;
 using std::filesystem::path;
 
+#ifdef __unix__
+    const MagicNumber mn = P6;
+#else
+    const MagicNumber mn = P3;
+#endif
 
 const path PIECEDIR("pieces/");
 const Color DARK_SQUARES(172,129,94);
@@ -130,7 +135,7 @@ int main(int argc, char**argv){
             canvas.drawSprite(*board[x][y],x*SQUARE_WIDTH,y*SQUARE_HEIGHT);
         }
     }
-    generatePPM(output,canvas);
+    generatePPM(output,canvas,mn);
 
     return 0;
 }

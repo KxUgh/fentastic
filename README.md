@@ -2,15 +2,12 @@
 
 ## Build
 
-### Linux
-
 ```console
 $ git clone https://github.com/KxUgh/fentastic.git
 $ cd fentastic
 $ git submodule init
 $ git submodule update
-$ chmod +x build.sh
-$ ./build.sh
+$ make
 ```
 ## Gallery
 ![img](gallery/example2.png)

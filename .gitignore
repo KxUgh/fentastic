@@ -6,3 +6,4 @@ pieces/*.png
 lib/*
 include/*
 *.svg
+*.sh
